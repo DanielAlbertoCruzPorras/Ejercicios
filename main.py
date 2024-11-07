@@ -37,7 +37,9 @@ def menu():
     
     opcion = input("Ingrese el número de la operación: ")
 
-    if opcion in ["1", "2", "3", "4", "5"]:
+    if opcion in ["5", "6", "7", "8"]:
+        print("Contenido en desarrollo, disponible en futuras versiones") #El enunciado dice que suma, resta, mult y div
+    elif opcion in ["1", "2", "3", "4", "5"]:
         a = float(input("Ingrese el primer número: "))
         b = float(input("Ingrese el segundo número: "))
         
