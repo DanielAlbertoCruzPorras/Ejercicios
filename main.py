@@ -1,15 +1,18 @@
-# Ejercicio 9: Clasificación de edades
-edad = int(input("Ingrese su edad: "))
+# Ejercicio 10: Clasificación de notas
+nota = float(input("Ingrese la nota: "))
 
-if 0 <= edad <= 12:
-    print("Es un niño.")
-elif 13 <= edad <= 17:
-    print("Es un adolescente.")
-elif 18 <= edad <= 64:
-    print("Es un adulto.")
-elif edad >= 65:
-    print("Es un anciano.")
+if 90 <= nota <= 100:
+    print("Clasificación: A")
+elif 80 <= nota <= 89:
+    print("Clasificación: B")
+elif 70 <= nota <= 79:
+    print("Clasificación: C")
+elif 60 <= nota <= 69:
+    print("Clasificación: D")
+elif 0 <= nota < 60:
+    print("Clasificación: F")
 else:
-    print("Edad no válida.")
+    print("Nota no válida.")
+
 
 
