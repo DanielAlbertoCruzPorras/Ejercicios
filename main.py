@@ -14,5 +14,5 @@ hoy = {
 if dia in hoy:
     print(f"{hoy[dia]}")
 else:
-    print("Número de día no válido.")
+    print("Número de día no válido, debe ser un entero del 1 al 7.")
 
