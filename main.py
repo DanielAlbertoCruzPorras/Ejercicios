@@ -1,9 +1,8 @@
-# Ejercicio 7: Número + - ó 0
-num = float(input("Ingrese un número entero: "))
+# Ejercicio 8: Año bisiesto
+año = int(input("Ingrese un año: "))
 
-if num == 0:
-    print("El número ingresado es 0.")
-elif num < 0:
-    print("El número ingresado es negativo.")
+if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
+    print("El año es bisiesto.")
 else:
-    print("El número ingresado es positivo")
+    print("El año no es bisiesto.")
+
