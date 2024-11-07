@@ -1,7 +1,7 @@
 # Ejercicio 1: Pares o impares
-num = int(input("Ingrese un numero: "))
-if num % 2 == 0:
-    print(f"{num} es un número par.")
+num = float(input("Ingrese la nota: "))
+if num >= 60:
+    print(f"La nota es aprobatoria.")
 else:
-    print(f"{num} es un número impar.")
+    print(f"La nota es reprobatoria.")
 
