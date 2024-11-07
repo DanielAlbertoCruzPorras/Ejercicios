@@ -1,18 +1,15 @@
-# Ejercicio 5: Días de la semana
-dia = int(input("Ingrese el número del día de la semana: "))
+# Ejercicio 6: Juego adivinanza
+import random
 
-hoy = {
-    1: "Lunes",
-    2: "Martes",
-    3: "Miércoles",
-    4: "Jueves",
-    5: "Viernes",
-    6: "Sábado",
-    7: "Domingo"
-}
+numero_aleatorio = random.randint(1, 10)
 
-if dia in hoy:
-    print(f"{hoy[dia]}")
-else:
-    print("Número de día no válido, debe ser un entero del 1 al 7.")
+while True:
+    intento = int(input("Adivina el número entre 1 y 10: "))
 
+    if intento < numero_aleatorio:
+        print("El número es mayor.")
+    elif intento > numero_aleatorio:
+        print("El número es menor.")
+    else:
+        print("¡Correcto! Has adivinado el número.")
+        break
