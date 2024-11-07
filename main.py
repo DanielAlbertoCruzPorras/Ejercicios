@@ -1,8 +1,15 @@
-# Ejercicio 8: Año bisiesto
-año = int(input("Ingrese un año: "))
+# Ejercicio 9: Clasificación de edades
+edad = int(input("Ingrese su edad: "))
 
-if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
-    print("El año es bisiesto.")
+if 0 <= edad <= 12:
+    print("Es un niño.")
+elif 13 <= edad <= 17:
+    print("Es un adolescente.")
+elif 18 <= edad <= 64:
+    print("Es un adulto.")
+elif edad >= 65:
+    print("Es un anciano.")
 else:
-    print("El año no es bisiesto.")
+    print("Edad no válida.")
+
 
