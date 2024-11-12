@@ -1,12 +1,18 @@
-# Exercise 14: Letter Guessing Game
-secret_letter = 'A'
+# Exercise 15: Calculate Net Salary
+gross_salary = float(input("Enter your gross salary: "))
+country = input("Enter your country of residence: ").strip().upper()
 
-guess = input("Guess the secret letter (one letter): ").upper()
+if country == "COUNTRY A":
+    tax_rate = 0.20
+elif country == "COUNTRY B":
+    tax_rate = 0.15
+elif country == "COUNTRY C":
+    tax_rate = 0.10
+else:
+    tax_rate = 0.25  # Apply 25% tax if the country is not listed
 
-match guess:
-    case "A":
-        print("You guessed it! The secret letter is A.")
-    case _:
-        print("Wrong guess! Try again.")
+net_salary = gross_salary * (1 - tax_rate)
+
+print(f"Your net salary is: {net_salary:.2f}")
 
 
