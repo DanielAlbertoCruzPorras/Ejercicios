@@ -1,17 +1,12 @@
-# Exercise 13: Comparing Three Numbers
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-num3 = float(input("Enter the third number: "))
+# Exercise 14: Letter Guessing Game
+secret_letter = 'A'
 
-if num1 >= num2 and num1 >= num3:
-    largest = num1
-elif num2 >= num1 and num2 >= num3:
-    largest = num2
-else:
-    largest = num3
+guess = input("Guess the secret letter (one letter): ").upper()
 
-print(f"The largest number is: {largest}")
-
-
+match guess:
+    case "A":
+        print("You guessed it! The secret letter is A.")
+    case _:
+        print("Wrong guess! Try again.")
 
 
