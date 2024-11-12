@@ -1,12 +1,11 @@
-# Exercise 17: Grading System with Bonuses
-grade = float(input("Enter the student's grade (0-100): "))
-extra_tasks = input("Did the student do extra tasks? (yes/no): ").strip().lower()
+# Exercise 18: University Credit Evaluation System
+num_courses = int(input("Enter the number of courses taken: "))
+total_credits = 0
 
-if extra_tasks == "yes":
-    grade += grade * 0.05  # Add 5% bonus
-    if grade > 100:
-        grade = 100  # Ensure the grade doesn't exceed 100
+for i in range(num_courses):
+    score = float(input(f"Enter the score for course {i + 1}: "))
+    if score >= 60:
+        total_credits += 3  # Each passed course gives 3 credits
 
-print(f"The final grade is: {grade:.2f}")
-
+print(f"The total number of credits earned is: {total_credits}")
 
