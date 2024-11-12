@@ -1,15 +1,12 @@
-# Exercise 16: Calculate Travel Time
-distance = float(input("Enter the distance to travel in km: "))
-speed = float(input("Enter the average speed of the car in km/h: "))
+# Exercise 17: Grading System with Bonuses
+grade = float(input("Enter the student's grade (0-100): "))
+extra_tasks = input("Did the student do extra tasks? (yes/no): ").strip().lower()
 
-travel_time_hours = distance / speed
+if extra_tasks == "yes":
+    grade += grade * 0.05  # Add 5% bonus
+    if grade > 100:
+        grade = 100  # Ensure the grade doesn't exceed 100
 
-travel_time_minutes = (travel_time_hours - int(travel_time_hours)) * 60
-travel_time_minutes = round(travel_time_minutes)
-
-print(f"The estimated travel time is: {int(travel_time_hours)} hours and {travel_time_minutes} minutes.")
-
-if speed > 120:
-    print("Warning! The speed is over 120 km/h.")
+print(f"The final grade is: {grade:.2f}")
 
 

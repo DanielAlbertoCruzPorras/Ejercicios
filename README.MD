@@ -38,7 +38,10 @@ Ejercicio 20: Conversión de calificaciones numéricas a letras Escribe un progr
 
 Ejercicio 21: Sistema de estacionamiento con tarifas progresivas Escribe un programa que calcule el costo de estacionamiento basado en el número de horas, con tarifas progresivas. Enunciado: El costo de estacionamiento se calcula de la siguiente manera: Primera hora: $5 Segunda a cuarta hora: $4 por hora Más de cuatro horas: $3 por cada hora adicional Solicita al usuario el número de horas de estacionamiento y calcula el costo total.
 
-Ejercicio 22: Clasificación de triángulos por sus ángulos Escribe un programa que clasifique un triángulo en agudo, obtuso o rectángulo según sus ángulos internos usando if . Enunciado: Solicita al usuario los tres ángulos de un triángulo y clasifícalo en: Agudo: Todos los ángulos son menores a 90°. Rectángulo: Un ángulo es exactamente 90°. Obtuso: Un ángulo es mayor a 90°. Estructuras Iterativas
+Ejercicio 22: Clasificación de triángulos por sus ángulos Escribe un programa que clasifique un triángulo en agudo, obtuso o rectángulo según sus ángulos internos usando if . Enunciado: Solicita al usuario los tres ángulos de un triángulo y clasifícalo en: Agudo: Todos los ángulos son menores a 90°. Rectángulo: Un ángulo es exactamente 90°. Obtuso: Un ángulo es mayor a 90°. 
+
+
+Estructuras Iterativas
 
 Ejercicio 1: Suma de los primeros N números enteros Enunciado: Escribe un programa que solicite al usuario un número entero positivo n y calcule la suma de los primeros n números enteros. Utiliza un ciclo for para realizar la suma.
 
