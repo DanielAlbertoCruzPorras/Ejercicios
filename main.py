@@ -1,11 +1,16 @@
-# Exercise 18: University Credit Evaluation System
-num_courses = int(input("Enter the number of courses taken: "))
-total_credits = 0
+# Exercise 20: Convert Numerical Grade to Letter Grade
+grade = float(input("Enter the numerical grade (0-100): "))
 
-for i in range(num_courses):
-    score = float(input(f"Enter the score for course {i + 1}: "))
-    if score >= 60:
-        total_credits += 3  # Each passed course gives 3 credits
+match grade:
+    case grade if 90 <= grade <= 100:
+        letter = "A"
+    case grade if 80 <= grade < 90:
+        letter = "B"
+    case grade if 70 <= grade < 80:
+        letter = "C"
+    case grade if 60 <= grade < 70:
+        letter = "D"
+    case _:
+        letter = "F"
 
-print(f"The total number of credits earned is: {total_credits}")
-
+print(f"The letter grade is: {letter}")
