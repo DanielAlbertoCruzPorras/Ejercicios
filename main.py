@@ -1,18 +1,19 @@
-# Exercise 11: Temperature conversion
-temperature = float(input("Enter the temperature: "))
-scale = input("Enter the scale (C for Celsius, F for Fahrenheit): ").upper()
+# Exercise 12: BMI (Body Mass Index) Calculator
+weight = float(input("Enter your weight in kg: ")) #Peso
+height = float(input("Enter your height in meters: ")) #Altura
 
-match scale:
-    case "C":
-        # Convert Celsius to Fahrenheit
-        converted_temp = (temperature * 9/5) + 32
-        print(f"{temperature}°C is equal to {converted_temp}°F.")
-    case "F":
-        # Convert Fahrenheit to Celsius
-        converted_temp = (temperature - 32) * 5/9
-        print(f"{temperature}°F is equal to {converted_temp}°C.")
-    case _:
-        print("Invalid scale entered. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+bmi = weight / (height ** 2)
+
+if bmi < 18.5:
+    status = "Underweight"
+elif 18.5 <= bmi <= 24.9:
+    status = "Normal weight"
+elif 25 <= bmi <= 29.9:
+    status = "Overweight"
+else:
+    status = "Obesity"
+
+print(f"Your BMI is {bmi:.2f}. Weight status: {status}")
 
 
 
