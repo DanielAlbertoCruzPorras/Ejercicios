@@ -1,19 +1,16 @@
-# Exercise 12: BMI (Body Mass Index) Calculator
-weight = float(input("Enter your weight in kg: ")) #Peso
-height = float(input("Enter your height in meters: ")) #Altura
+# Exercise 13: Comparing Three Numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
 
-bmi = weight / (height ** 2)
-
-if bmi < 18.5:
-    status = "Underweight"
-elif 18.5 <= bmi <= 24.9:
-    status = "Normal weight"
-elif 25 <= bmi <= 29.9:
-    status = "Overweight"
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
 else:
-    status = "Obesity"
+    largest = num3
 
-print(f"Your BMI is {bmi:.2f}. Weight status: {status}")
+print(f"The largest number is: {largest}")
 
 
 
