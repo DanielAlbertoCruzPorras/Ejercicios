@@ -1,18 +1,15 @@
-# Exercise 15: Calculate Net Salary
-gross_salary = float(input("Enter your gross salary: "))
-country = input("Enter your country of residence: ").strip().upper()
+# Exercise 16: Calculate Travel Time
+distance = float(input("Enter the distance to travel in km: "))
+speed = float(input("Enter the average speed of the car in km/h: "))
 
-if country == "COUNTRY A":
-    tax_rate = 0.20
-elif country == "COUNTRY B":
-    tax_rate = 0.15
-elif country == "COUNTRY C":
-    tax_rate = 0.10
-else:
-    tax_rate = 0.25  # Apply 25% tax if the country is not listed
+travel_time_hours = distance / speed
 
-net_salary = gross_salary * (1 - tax_rate)
+travel_time_minutes = (travel_time_hours - int(travel_time_hours)) * 60
+travel_time_minutes = round(travel_time_minutes)
 
-print(f"Your net salary is: {net_salary:.2f}")
+print(f"The estimated travel time is: {int(travel_time_hours)} hours and {travel_time_minutes} minutes.")
+
+if speed > 120:
+    print("Warning! The speed is over 120 km/h.")
 
 
