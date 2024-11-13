@@ -1,14 +1,11 @@
 ## Repetitive Structures
-# Exercise 2: Vowel Counter in a String
-text = input("Enter a string: ").lower()
+# Exercise 3: Factorial of a Number
+n = int(input("Enter a positive integer: "))
 
-vowel_count = 0
-vowels = set("aeiou")
+factorial = 1
 
-for char in text:
-    if char in vowels:
-        vowel_count += 1
+for i in range(1, n + 1):
+    factorial *= i
 
-print(f"The number of vowels in the string is: {vowel_count}")
-
+print(f"The factorial of {n} is: {factorial}")
 
