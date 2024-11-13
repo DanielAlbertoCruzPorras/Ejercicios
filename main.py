@@ -1,10 +1,19 @@
 ## Repetitive Structures
-# Exercise 4: Even Numbers in a Range
-start = int(input("Enter the start value: "))
-end = int(input("Enter the end value: "))
+# Exercise 6: Guess the Number (with while)
+import random
 
-for num in range(start, end + 1):
-    if num % 2 == 0:
-        print(num, end=" ")
+secret_number = random.randint(1, 100)
+guess = None
+
+while guess != secret_number:
+    guess = int(input("Guess the number (between 1 and 100): "))
+    
+    if guess < secret_number:
+        print("Too low! Try again.")
+    elif guess > secret_number:
+        print("Too high! Try again.")
+    else:
+        print("Congratulations! You guessed the number.")
+
 
 
