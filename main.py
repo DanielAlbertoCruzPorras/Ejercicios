@@ -1,11 +1,10 @@
 ## Repetitive Structures
-# Exercise 3: Factorial of a Number
-n = int(input("Enter a positive integer: "))
+# Exercise 4: Even Numbers in a Range
+start = int(input("Enter the start value: "))
+end = int(input("Enter the end value: "))
 
-factorial = 1
+for num in range(start, end + 1):
+    if num % 2 == 0:
+        print(num, end=" ")
 
-for i in range(1, n + 1):
-    factorial *= i
-
-print(f"The factorial of {n} is: {factorial}")
 
