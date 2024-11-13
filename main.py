@@ -1,11 +1,14 @@
 ## Repetitive Structures
-# Exercise 1: Sum of the First N Integers
-n = int(input("Enter a positive integer: "))
+# Exercise 2: Vowel Counter in a String
+text = input("Enter a string: ").lower()
 
-sum_total = 0
+vowel_count = 0
+vowels = set("aeiou")
 
-for i in range(1, n + 1):
-    sum_total += i
+for char in text:
+    if char in vowels:
+        vowel_count += 1
 
-print(f"The sum of the first {n} integers is: {sum_total}")
+print(f"The number of vowels in the string is: {vowel_count}")
+
 
